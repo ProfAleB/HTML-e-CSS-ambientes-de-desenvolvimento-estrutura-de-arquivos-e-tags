@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estufa Sustentável - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌱 Estufa Sustentável</h1>
+        <nav>
+            <button onclick="mudarPagina('simulador')">Simulador</button>
+            <button onclick="mudarPagina('agrinho')">Sobre o Agrinho</button>
+            <button onclick="mudarPagina('sobre-mim')">Sobre Mim</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="simulador" class="pagina ativa">
+            <h2>Simulador de Estufa de Morangos 🍓</h2>
+            <p>Ajuste as variáveis abaixo para encontrar o equilíbrio perfeito para a produção de morangos, economizando recursos e garantindo a sustentabilidade.</p>
+            
+            <div class="controles-simulador">
+                <div class="controle">
+                    <label for="temp">Temperatura: <span id="temp-valor">20</span> °C</label>
+                    <input type="range" id="temp" min="0" max="40" value="20">
+                </div>
+                
+                <div class="controle">
+                    <label for="umidade-ar">Umidade do Ar: <span id="umidade-ar-valor">70</span>%</label>
+                    <input type="range" id="umidade-ar" min="0" max="100" value="70">
+                </div>
+                
+                <div class="controle">
+                    <label for="umidade-solo">Umidade do Solo: <span id="umidade-solo-valor">75</span>%</label>
+                    <input type="range" id="umidade-solo" min="0" max="100" value="75">
+                </div>
+            </div>
+
+            <div class="resultado-painel">
+                <h3>Status da Plantação:</h3>
+                <p id="resultado-texto">Aguardando ajustes...</p>
+                <div id="emoji-status">🍓</div>
+            </div>
+        </section>
+
+        <section id="agrinho" class="pagina">
+            <h2>Concurso Agrinho 2026</h2>
+            <h3>Tema: Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h3>
+            <p>O Programa Agrinho visa desenvolver a consciência cidadã e ambiental. Este projeto busca demonstrar como a tecnologia aliada ao campo pode criar um futuro sustentável.</p>
+            <p>O simulador prova que, ao controlarmos variáveis ambientais, evitamos o desperdício de água e reduzimos a necessidade de defensivos agrícolas, promovendo o equilíbrio exato que o tema pede.</p>
+            <div class="imagem-container">
+                <img src="Agrinho cortado 2026.png" alt="Imagem do concurso Agrinho">
+            </div>
+        </section>
+
+        <section id="sobre-mim" class="pagina">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-mim-conteudo">
+                <p>Olá! Sou aluno do <strong>1º ano do Ensino Médio</strong> e sou o criador deste projeto.</p>
+                <p>Sou apaixonado por tecnologia e por como ela pode ajudar a resolver problemas reais do nosso dia a dia. Escolhi criar este simulador para o Agrinho 2026 porque acredito que o futuro da agricultura depende do equilíbrio perfeito entre produzir o que precisamos e proteger o meio ambiente em que vivemos.</p>
+                <p>Com um pouco de código e muita dedicação, podemos pensar em soluções sustentáveis juntos!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para o Concurso Agrinho 2026.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
